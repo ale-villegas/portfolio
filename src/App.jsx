@@ -1,8 +1,9 @@
 
 import './App.css'
-import NavBar from './components/NavBar'
-import Presentation from './components/Presentation'
-import Projects from './components/Projects'
+import ContactMe from './components/contact-me/ContactMe'
+import NavBar from './components/navbar/NavBar'
+import Presentation from "./components/presentation/Presentation"
+import Projects from './components/projects/Projects'
 
 
 
@@ -13,10 +14,12 @@ function App() {
     <>
     
 <NavBar/>
-
+<main>
 <Presentation/>
 
 <Projects/>
+<ContactMe/>
+</main>
 
     </>
   )

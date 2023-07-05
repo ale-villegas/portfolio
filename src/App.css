@@ -1,14 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans:wght@600&family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&family=Passion+One:wght@400;700&family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
+ 
+
+
+  
+
+}  
+
+
+body{
+  color: var(--body-color);
+  transition: all 0.3s ease-in-out;
+ 
 }
 
-:root{
-  --degrade:  linear-gradient(111deg, rgba(2,0,36,1) 0%, rgba(84,9,121,1) 21%, rgba(0,212,255,1) 100%, rgba(248,254,255,1));
-  
+
+body::-webkit-scrollbar {
+  width: 8px; 
+  border-radius: 20px;/* Ancho de la barra de desplazamiento */
+} 
+
+body::-webkit-scrollbar-thumb {
+  background-image: var(--gradient); 
+  border-radius: 20px;/* Color de la barra de desplazamiento */
 }
+
 
 @keyframes fadeInAnimation {
   from {
@@ -21,35 +42,28 @@
 
 body{
   opacity: 0;
-  animation: fadeInAnimation 1s ease-in forwards;
+  animation: fadeInAnimation 1s ease-in-out forwards;
 }
-
 
 .fade-in {
   opacity: 0;
   animation: fadeInAnimation 1s ease-in forwards;
 }
   h1{
-    background-image:  var(--degrade);
-
+    background-image:  var(--gradient);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
   
-font-weight: bolder;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Passion One', cursive;
+    font-weight: bolder;
+font-size: 3.5rem;
+letter-spacing: -0.04rem;
+padding: 30px 0px;
 
   }
   
-
-.box{
-  background-color: black;
-  height: 30px;
-  width: 200px;
-}
-
-
 /* Aca comienzan los estilos de verdad */  
 
 main {
@@ -59,61 +73,23 @@ main {
   justify-content: center; /* Centrar horizontalmente los elementos en el eje principal */
 align-items: center;
 }
-nav{
-  width: 100%;
-  display: flex;
-justify-content: space-around;
-  background-color: blueviolet;
-  height: 10vh;
-  align-items: center;
-  position: fixed;
 
-}
-nav ul{
+@media (prefers-color-scheme: dark) {
+    
+  body {
+    background-color: var(--body-background);
+    color: var(--body-color);
 
-  display: flex;
-  justify-content: space-around;
-background-color: blue;
-width: 50%;
-list-style: none;
+    
+  } 
+  body::-webkit-scrollbar-thumb {
+    background-image: var(--gradient) ; 
+    border-radius: 20px;/* Color de la barra de desplazamiento */
+  }
 
+h1{
+
+  background-image: var(--gradient)
 } 
-
-
-.presentation {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  gap: 40px;
-  padding-top: 10vh;
   
-
-
 } 
-.presentation p{ 
-  text-align: justify;
-  font-size: 1.20rem;
-  line-height: 32px; 
-  width: 60%;
-}
-
-
-.presentation img{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover; 
-
-} 
-
-
-.projects{
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}

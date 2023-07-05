@@ -1,0 +1,107 @@
+.presentation{
+    padding: 15vh 0 5vh 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px
+  }
+  .box-text-photo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 40px;
+    
+    
+  
+  
+  } 
+  .box-text-photo p{ 
+    text-align: justify;
+    font-size: 1.20rem;
+    line-height:2.3rem;
+    width: 100%;
+  }
+  
+  
+  .box-text-photo img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+  }  
+  
+  
+  .btn-get-in-touch {
+    padding: 12px 40px;
+    background-image: var(--gradient) ;
+    color: var(--btn-touch-color);
+    border-radius: 15px;
+    border: none;
+  font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: var(--btn-touch-border);
+  font-size: 0.9rem;
+  transition: ease-out 0.15s;
+    
+  }
+  
+  .btn-get-in-touch:hover{
+  scale: 1.02;
+  opacity: 0.85;
+  }
+
+  
+
+  @media only screen and (max-width: 850px) {
+    .box-text-photo {
+      flex-direction: column;
+    }
+    
+    .box-text-photo img {
+      width: 100%;
+    
+    
+      border-radius: 5px;
+    }
+    .btn-get-in-touch{
+      width: 40%;
+      
+    }
+    
+    
+    
+    
+    
+    } 
+    
+    
+    @media only screen and (max-width: 600px) {
+    
+    
+    
+      .box-text-photo{
+        width: 90%;
+      
+      } 
+    
+    .box-text-photo p{
+    
+      font-size: 1.2rem;
+      line-height:2.05rem;
+    }
+    
+    .btn-get-in-touch{
+      width: 55%;
+      
+    
+    
+    } }
