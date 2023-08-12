@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { LenguageContext } from "../../context/LenguageContext"
 import foto from "../../assets/perfil.jpg"
+import comic from "../../assets/comic.png"
 import "./styles.css"
 
 const Presentation = () => {
@@ -15,7 +16,7 @@ const Presentation = () => {
    
     </div>
   
-  <button className="btn-get-in-touch">{text.buttonGetInTouch}</button>
+<a href="#contact"><button className="btn-get-in-touch">{text.buttonGetInTouch}</button></a>  
   </div>
     
   )

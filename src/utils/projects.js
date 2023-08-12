@@ -1,6 +1,7 @@
 import player from "../assets/player.jpg"
 import todo from "../assets/todo.jpg"
 import images from "../assets/images-app.jpg"
+import figma from "../assets/figma.jpg"
 
 const projects = [
     {
@@ -38,8 +39,8 @@ const projects = [
     {
         title: "To do",
         description: "  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti ",
-        img: todo,
-        linkGit: "",
+        img: figma,
+        link: "",
         linkProject: ""
 
     },

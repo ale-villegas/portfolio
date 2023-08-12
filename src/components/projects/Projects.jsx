@@ -1,21 +1,24 @@
 import { useContext } from 'react'
 import { LenguageContext } from '../../context/LenguageContext'
 import Project from './Project'
-import projects from '../../utils/projects'
+
 
 const Projects = () => {
     const {text} = useContext(LenguageContext)
   return (
- 
+    <>
+    <a name="portfolio" style={{
+      paddingBottom: "50px",
+    }}></a>
 <section className='complete-box'>
     
     <h1 className='project-title'>
-        {text.portafolio}
+        {text.portfolio}
     </h1>  
 
 <div className="projects">
    {
-    projects.map((project => {
+    text.projects.map((project => {
       return (
        
         <Project key={project.title} project={project} />
@@ -26,6 +29,7 @@ const Projects = () => {
 
     </div>
     </section>
+    </>
   )
 }
 

@@ -1,24 +1,55 @@
-import {AiOutlineLinkedin, AiOutlineWhatsApp, AiOutlineMail} from "react-icons/ai"
+import {AiOutlineLinkedin, AiOutlineWhatsApp, AiOutlineMail, AiFillGithub, AiFillHtml5} from "react-icons/ai"
+import {BiLogoJavascript, BiLogoMongodb} from "react-icons/bi"
+import {FaReact, FaFigma, FaNodeJs} from "react-icons/fa"
+
 import "./styles.css"
 import cv from "../../assets/cv.jpg"
+import { useContext } from "react"
+import { LenguageContext } from "../../context/LenguageContext"
 const ContactMe = () => {
+
+  const {text} = useContext(LenguageContext)
+
   return (
-   <> <h1>Contact me</h1>
+
+
+
+
+   <>
+       <a name="contact" ></a>
+   
+    <h1>{text.contact}</h1>
+   
     <div className="box-contact">
 
-      <div className="contact-links">
-   <div className="available">Available</div>
+      <div className="int-box">
+   <h2>{text.contactInfo}</h2>
         <ul>
-            <li><AiOutlineLinkedin size={30}/>Linkedin</li>
-            <li> <AiOutlineWhatsApp size={30}/>Whatsapp</li>
-            <li> <AiOutlineMail size={30}/>Email</li>
-            
+        <li className="icon-contact"><AiOutlineLinkedin  size={30}/>Linkedin</li>
+            <li className="icon-contact"> <AiOutlineWhatsApp  size={30}/>Whatsapp</li>
+            <li className="icon-contact"> <AiOutlineMail  size={30}/>Email</li>
+            <li className="icon-contact"> <AiFillGithub  size={30}/>Github</li>
         </ul>
+        </div> 
+
+        <div className="int-box">
+<h2>Stack</h2>
+<ul>
+            <li className="icon-stack"> <AiFillHtml5  size={30}/>HTML/CSS</li>
+            <li className="icon-stack"> <BiLogoJavascript  size={30}/>JavaScript</li>
+            <li className="icon-stack"><FaReact  size={30}/>React</li>
+       
+            <li className="icon-stack"> <FaFigma  size={30}/>Figma</li>
+            <li className="icon-stack"> <AiFillGithub  size={30}/>Github</li>
+            <li className="icon-stack"> <FaNodeJs  size={30}/>NodeJs</li>
+            <li className="icon-stack"> <BiLogoMongodb  size={30}/>MongoDB</li>
+            </ul>
         </div>
 
-        <div className="cv-box">
-          <img src={cv} alt="" />
-        <strong>Download my CV</strong>
+        <div className="int-box">
+          <h2>CV</h2>
+         <img src={cv} alt="" />
+        <strong>{text.downloadCV}</strong>
         </div>
        
     </div>

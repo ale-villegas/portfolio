@@ -13,21 +13,22 @@
 }  
 
 
-body{
+body, html{
   color: var(--body-color);
   transition: all 0.3s ease-in-out;
+  background-color: var(--body-background);
  
 }
 
 
 body::-webkit-scrollbar {
-  width: 8px; 
+  width: 7px; 
   border-radius: 20px;/* Ancho de la barra de desplazamiento */
 } 
 
 body::-webkit-scrollbar-thumb {
   background-image: var(--gradient); 
-  border-radius: 20px;/* Color de la barra de desplazamiento */
+  border-radius: 15px;/* Color de la barra de desplazamiento */
 }
 
 
@@ -63,6 +64,19 @@ letter-spacing: -0.04rem;
 padding: 30px 0px;
 
   }
+
+  h2{
+    background-image:  var(--gradient);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Passion One', cursive;
+    font-weight: bolder;
+font-size: 2rem;
+letter-spacing: -0.04rem;
+padding: 15px 0px;
+  }
   
 /* Aca comienzan los estilos de verdad */  
 
@@ -87,9 +101,11 @@ align-items: center;
     border-radius: 20px;/* Color de la barra de desplazamiento */
   }
 
-h1{
+h1, h2{
 
   background-image: var(--gradient)
 } 
   
 } 
+
+

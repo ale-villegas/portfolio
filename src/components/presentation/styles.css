@@ -1,12 +1,13 @@
 .presentation{
     padding: 15vh 0 5vh 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px
+    gap: 50px;
+    background-color: var(--body-background);
   }
   .box-text-photo {
     width: 80%;
@@ -22,8 +23,8 @@
   } 
   .box-text-photo p{ 
     text-align: justify;
-    font-size: 1.20rem;
-    line-height:2.3rem;
+    font-size: 1.15rem;
+    line-height:2.15rem;
     width: 100%;
   }
   
@@ -68,18 +69,9 @@
     
     .box-text-photo img {
       width: 100%;
-    
-    
       border-radius: 5px;
     }
-    .btn-get-in-touch{
-      width: 40%;
-      
-    }
-    
-    
-    
-    
+
     
     } 
     
@@ -99,9 +91,4 @@
       line-height:2.05rem;
     }
     
-    .btn-get-in-touch{
-      width: 55%;
-      
-    
-    
-    } }
+ }

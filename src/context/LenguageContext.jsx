@@ -4,13 +4,14 @@ import translations from "../../i18n";
 export const LenguageContext = createContext()
 
 export const LenguageProvider = ({children}) => {
-    const [text] = useState(translations.es)
+    const [text, setText] = useState(translations.es)
    
     return (
         <LenguageContext.Provider value={{
-text
+text, setText
         }}>
             {children}
         </LenguageContext.Provider>
     )
-}
+} 
+
