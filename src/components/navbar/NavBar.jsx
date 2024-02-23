@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { LenguageContext } from "../../context/LenguageContext";
-import { FaRegMoon, FaRegSun } from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa"; 
+import {BsSun} from "react-icons/bs"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import "./styles.css";
@@ -57,13 +58,13 @@ const changeLenguage = () => {
          <a href="#top"><span className="logo-nav">ale-villegas.com</span></a> 
 
           <ul>
-            <a href="#portfolio">
            
-              <li className="nav-link">{text.portfolio}</li>
-            </a>
-            <a href="#contact">
-              <li className="nav-link">{text.contact}</li>
-            </a>
+           
+              <li className="nav-link"> <a href="#portfolio"  >{text.projectsTitle}</a></li>
+           
+            
+              <li className="nav-link"><a href="#contact">{text.contact}</a></li>
+            
           </ul>
 
           {openBurger ? (
@@ -93,7 +94,7 @@ const changeLenguage = () => {
               </div>
             ) : (
               <div className="hover-icon" onClick={setLightTheme}>
-                <FaRegSun size={20} className="moon" />
+                <BsSun size={20} className="moon" />
               </div>
             )}
           </div>
@@ -112,18 +113,18 @@ const changeLenguage = () => {
             </div>
           ) : (
             <div className="hover-icon" onClick={setLightTheme}>
-              <FaRegSun size={20} className="moon" />
+              <BsSun size={20} className="moon" />
             </div>
           )}
         </div>
         <ul>
-          <a href="#portfolio">
+          
             {" "}
-            <li className="nav-link" onClick={() => setOpenBurger(false)}>{text.portfolio}</li>
-          </a>
-          <a href="#contact">
-            <li className="nav-link" onClick={() => setOpenBurger(false)}>{text.contact}</li>
-          </a>
+            <li className="nav-link" onClick={() => setOpenBurger(false)}><a href="#portfolio">{text.projectsTitle} </a></li>
+         
+          
+            <li className="nav-link" onClick={() => setOpenBurger(false)}><a href="#contact">{text.contact}</a></li>
+          
         </ul>
       </div>
     </>

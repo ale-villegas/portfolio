@@ -15,14 +15,14 @@ const Project = ({project}) => {
 <h3>
   {project.title}
 </h3>
-{ project.linkGit !== "figma" ?
+{ project.linkGit !== "https://www.figma.com/file/8kDw56dYpYmXIkbw6YEanc/taco-food-truck-app?type=design&node-id=0-1&mode=design&t=d3mkmvQFoVHSxMKO-0" ?
 <div className="icons">
 <a href={project.linkProject}><BiLinkExternal size={30} className="icon-git" /></a>
-<a href="otr.conm"><AiFillGithub size={30} className="icon-git"/> </a></div>
+<a href={project.linkGit}><AiFillGithub size={30} className="icon-git"/> </a></div>
  :
  <div className="icons">
  <a href={project.linkProject}><BiLinkExternal size={30} className="icon-git"/></a>
-  <a href="otr.conm"><FiFigma size={30} className="icon-git"/></a> 
+  <a href={project.linkGit}><FiFigma size={30} className="icon-git"/></a> 
   </div>
 }
 

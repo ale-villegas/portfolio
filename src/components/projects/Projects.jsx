@@ -13,7 +13,7 @@ const Projects = () => {
 <section className='complete-box'>
     
     <h1 className='project-title'>
-        {text.portfolio}
+        {text.projectsTitle}
     </h1>  
 
 <div className="projects">
