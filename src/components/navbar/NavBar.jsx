@@ -55,7 +55,7 @@ const changeLenguage = () => {
     <a name="top"></a>
       <nav>
         <div className="box-nav">
-         <a href="#top"><span className="logo-nav">ale-villegas.com</span></a> 
+         <a href="#top"><span className="logo-nav">ale-villegas.es</span></a> 
 
           <ul>
            
